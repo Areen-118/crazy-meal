@@ -49,8 +49,8 @@ While working on the Crazy Meal project, I learned:
 
 ## 🔗 Live Website
 
-[👉 Click here to visit Crazy Meal on GitHub Pages](https://your-github-username.github.io/crazy-meal/)
-
+[👉 Click here to visit Crazy Meal on GitHub Pages](https://areen-118.github.io/crazy-meal/
+)
 
 ## 🚀 How to Run Locally
 
