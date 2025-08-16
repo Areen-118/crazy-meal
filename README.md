@@ -51,9 +51,6 @@ While working on the Crazy Meal project, I learned:
 
 [👉 Click here to visit Crazy Meal on GitHub Pages](https://your-github-username.github.io/crazy-meal/)
 
-> Replace this link with your actual GitHub Pages link after deploying!
-
----
 
 ## 🚀 How to Run Locally
 
