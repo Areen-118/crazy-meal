@@ -1,18 +1,16 @@
-// js/app.js
 
-// Constructor
 function Order(mealName, mealPrice, mealImage) {
   this.mealName = mealName;
   this.mealPrice = mealPrice;
   this.mealImage = mealImage;
 }
 
-// Get elements
+
 const form = document.getElementById("meal-form");
 const tableBody = document.querySelector("#ordersTable tbody");
 const clearBtn = document.getElementById("clearOrders");
 
-// Load and render existing orders
+
 let orders = JSON.parse(localStorage.getItem("orders")) || [];
 renderOrders();
 
