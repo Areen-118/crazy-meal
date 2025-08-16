@@ -1,0 +1,43 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Crazy Meal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Menu</h1>
+    <nav><a href="index.html">Back to Home</a></nav>
+  </header>
+
+  <main>
+    <section id="menu-list">
+      <!-- Dynamically filled by JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by AREEN © 2025</p>
+  </footer>
+
+  <script>
+    // Load orders from localStorage and render them
+    const orders = JSON.parse(localStorage.getItem("orders")) || [];
+    const menuList = document.getElementById("menu-list");
+
+    orders.forEach(order => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <h3>${order.mealName}</h3>
+        <p>Price: $${order.mealPrice}</p>
+        <img src="${order.mealImage}" alt="${order.mealName}" width="150" />
+      `;
+      menuList.appendChild(card);
+    });
+  </script>
+</body>
+</html>
